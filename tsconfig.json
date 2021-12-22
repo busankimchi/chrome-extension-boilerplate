@@ -7,63 +7,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "baseUrl": "./src",
-    "paths": {
-      "@Components": [
-        "components"
-      ],
-      "@Components/*": [
-        "components/*"
-      ],
-      "@API": [
-        "apis"
-      ],
-      "@API/*": [
-        "apis/*"
-      ],
-      "@Fonts": [
-        "assets/fonts"
-      ],
-      "@Fonts/*": [
-        "assets/fonts/*"
-      ],
-      "@Images": [
-        "assets/images"
-      ],
-      "@Images/*": [
-        "assets/images/*"
-      ],
-      "@Utils": [
-        "utils"
-      ],
-      "@Utils/*": [
-        "utils/*"
-      ],
-      "@Types": [
-        "types"
-      ],
-      "@Types/*": [
-        "types/*"
-      ],
-      "@Misc": [
-        "misc"
-      ],
-      "@Misc/*": [
-        "misc/*"
-      ],
-      "@Middleware": [
-        "middleware"
-      ],
-      "@Middleware/*": [
-        "middleware/*"
-      ],
-      "@Pages": [
-        "pages"
-      ],
-      "@Pages/*": [
-        "pages/*"
-      ]
-    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

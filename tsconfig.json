@@ -1,11 +1,69 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "baseUrl": "./src",
+    "paths": {
+      "@Components": [
+        "components"
+      ],
+      "@Components/*": [
+        "components/*"
+      ],
+      "@API": [
+        "apis"
+      ],
+      "@API/*": [
+        "apis/*"
+      ],
+      "@Fonts": [
+        "assets/fonts"
+      ],
+      "@Fonts/*": [
+        "assets/fonts/*"
+      ],
+      "@Images": [
+        "assets/images"
+      ],
+      "@Images/*": [
+        "assets/images/*"
+      ],
+      "@Utils": [
+        "utils"
+      ],
+      "@Utils/*": [
+        "utils/*"
+      ],
+      "@Types": [
+        "types"
+      ],
+      "@Types/*": [
+        "types/*"
+      ],
+      "@Misc": [
+        "misc"
+      ],
+      "@Misc/*": [
+        "misc/*"
+      ],
+      "@Middleware": [
+        "middleware"
+      ],
+      "@Middleware/*": [
+        "middleware/*"
+      ],
+      "@Pages": [
+        "pages"
+      ],
+      "@Pages/*": [
+        "pages/*"
+      ]
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -17,10 +75,18 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "types": [
+      "node",
+      "react",
+      "styled-components",
+      "jest",
+      "chrome"
+    ]
   },
   "include": [
-    "src"
+    "src/**/*",
+    "craco.config.js"
   ]
 }
